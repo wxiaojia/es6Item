@@ -1,53 +1,65 @@
-¸ùÄ¿Â¼ÏÂµÄ3¸ö°å¿é£º
-1.app£º·ÅÖÃÇ°¶Ë´úÂë¼°Ä£°å
-£¨1£©css
-£¨2£©js
-    £¨1£©class:es6ÖÐµÄÀà
-	£¨1£©test.js£ºÀ´×öÒ»¸ö³õÊ¼»¯Àà
-    £¨2£©index.js£ºÈë¿ÚÎÄ¼þ
-£¨3£©views£ºÄ£°å¼´html
-    £¨1£©error.ejs:£¨³õÊ¼»¯Ä£°åÎÄ¼þ£©´´½¨Ò»¸ö´íÎóµÄÄ£°å
-    £¨2£©index.ejs:  Èë¿ÚÄ£°å
-     ejs£ºÒòÎª·þÎñÆ÷´úÂëÊÇÍ¨¹ýhÕâ¸önodejs¿ò¼ÜÀ´×öµÄ£¬¶øÕâ¸ö¿ò¼ÜÓÃµÄÄ£°åÒýÇæ¾ÍÊÇÓÃejsÄ£°åÒýÇæ
-2.server:·þÎñÆ÷´úÂë£ºÊ¹ÓÃexpress½ÅÊÖ¼Ü£¬ÐèÒªnodejs
-	express -e .   expressÕâ¸ö½ÅÊÖ¼ÜÆô¶¯ÃüÁî -e:Ê¹ÓÃejsÄ£°åÒýÇæ .ÊÇÔÚµ±Ç°ÎÄ¼þ
-	ÎÊÌâ£ºexpress:Command not found
-	½â¾ö·½·¨£ºÔÚ°²×°Ò»¸ö°ü£ºnpm install -g express-generator
-	Ô­Òò£ºexpress3+ÒÑ¾­°Ñ´´½¨Ò»¸öapp¹¦ÄÜ·ÖÀë³öÀ´Îªexpress-generator£¬Ã»Ëû¾Í´´½¨²»ÁËÓ¦ÓÃ³ÌÐò
-3.tasks:¹¹½¨Õû¸öÇ°¶Ë´úÂëµÄ±àÒëÓë·þÎñÆ÷Ë¢ÐÂµÈ¹¦ÄÜ
-     £¨1£©util:·ÅÖÃ³£¼ûµÄ½Å±¾
-         £¨1£©args.js£ºÒýÈëÒ»¸ö°ü£¬ÓÃÀ´´¦ÀíÃüÁîÐÐ²ÎÊýµÄ
-		option('')£ºÌáÈ¡²ÎÊýµÄ,Èç gulp -production ,optionÌáÈ¡µÄ¾ÍÊÇ-production
-		 productionÄ¬ÈÏÊÇfalse£¬Èç¹ûÃüÁîÐÐÖÐÃ»ÓÐÕâ¸ö²ÎÊý£¬Ä¬ÈÏfalse¾ÍÊÇ¿ª·¢»·¾³
-     £¨2£©scripts.js:´´½¨Ò»¸ö¹¹½¨½Å±¾£¬ÊÇÒÔjs½øÐÐ´¦ÀíµÄ
-		ÍùÎÄ¼þÖÐÌí¼Ó¸÷ÖÖ°ü
-     £¨3£©pages.js:´¦ÀíÄ£°åµÄ¹¹½¨½Å±¾
-     £¨4£©css.js:´¦ÀícssµÄ£¬ÒòÎªcss²»ÐèÒª±àÒëµÈ£¬ËùÒÔ²»ÓÃ¼àÌý£¨¿ÉÓÐ¿ÉÎÞ£©
-     £¨5£©server.js:´¦Àí·þÎñÆ÷µÄ½Å±¾
-     £¨6£©½«ÉÏÃæ½¨Á¢µÄ½Å±¾ÖÐËùÓÐµÄÈÎÎñ×Ô¶¯µÄÈ¥Íê³É£¬µ±Ô´ÎÄ¼þ·¢Éú¸Ä±äÊ±×Ô¶¯±àÒëµ½±¸·Ýµ½ÆäËûµÄÎÄ¼þ£¬ÔòÐÂ½¨ÎÄ¼þ£º
-          browser.js: ä¯ÀÀÆ÷¼àÌýÏà¹ØµÄÎÄ¼þ
-     £¨7£©ÐÞ¸ÄÍêÐèÒª¸²¸ÇÔ­ÎÄ¼þ£¬ÕâÊ±ºòÎÒÃÇÒª½«Ô­Ä¿Â¼ÖÐµÄÎÄ¼þÇå¿Õµô
-	  clean.js:Çå¿ÕÔ­Ä¿Â¼ÖÐµÄÎÄ¼þ
-     £¨8£©build.js:½«ËùÓÐÈÎÎñ¶¼´®ÆðÀ´
-     £¨9£©default.js:µ±ÔÚÃüÁîÐÐÖÐÖ»ÊäÈëgulpÊ±£¬¾ÍÐèÒªÕÒµ½Õâ¸öÄ¬ÈÏµÄÎÄ¼þ£¬
-4.npm ÒÀÀµ°ü£º¿É×Ô¶¯´´½¨Ò²¿ÉÒÔnpm init´´½¨£¨±¾ÏîÄ¿ÓÃnpm init´´½¨£©
-5.babelrc£ºÉèÖÃbebel±àÒëµÄÎÄ¼þ
-	ÎÊÌâ£ºÔÚwindowÖÐ´´½¨ÒÔ.¿ªÍ·µÄÎÄ¼þ»á³öÏÖ´íÎó
-	½â¾ö·½·¨£ºÊäÈë".babelrc.",ÔÚºóÃæÔÙ¼ÓÒ»¸ö.
+ï»¿æ ¹ç›®å½•ä¸‹çš„3ä¸ªæ¿å—ï¼š
+1.appï¼šæ”¾ç½®å‰ç«¯ä»£ç åŠæ¨¡æ¿
+ï¼ˆ1ï¼‰css
+ï¼ˆ2ï¼‰js
+    ï¼ˆ1ï¼‰class:es6ä¸­çš„ç±»
+	ï¼ˆ1ï¼‰test.jsï¼šæ¥åšä¸€ä¸ªåˆå§‹åŒ–ç±»
+    ï¼ˆ2ï¼‰index.jsï¼šå…¥å£æ–‡ä»¶
+ï¼ˆ3ï¼‰viewsï¼šæ¨¡æ¿å³html
+    ï¼ˆ1ï¼‰error.ejs:ï¼ˆåˆå§‹åŒ–æ¨¡æ¿æ–‡ä»¶ï¼‰åˆ›å»ºä¸€ä¸ªé”™è¯¯çš„æ¨¡æ¿
+    ï¼ˆ2ï¼‰index.ejs:  å…¥å£æ¨¡æ¿
+     ejsï¼šå› ä¸ºæœåŠ¡å™¨ä»£ç æ˜¯é€šè¿‡hè¿™ä¸ªnodejsæ¡†æž¶æ¥åšçš„ï¼Œè€Œè¿™ä¸ªæ¡†æž¶ç”¨çš„æ¨¡æ¿å¼•æ“Žå°±æ˜¯ç”¨ejsæ¨¡æ¿å¼•æ“Ž
+2.server:æœåŠ¡å™¨ä»£ç ï¼šä½¿ç”¨expressè„šæ‰‹æž¶ï¼Œéœ€è¦nodejs
+	express -e .   expressè¿™ä¸ªè„šæ‰‹æž¶å¯åŠ¨å‘½ä»¤ -e:ä½¿ç”¨ejsæ¨¡æ¿å¼•æ“Ž .æ˜¯åœ¨å½“å‰æ–‡ä»¶
+	é—®é¢˜ï¼šexpress:Command not found
+	è§£å†³æ–¹æ³•ï¼šåœ¨å®‰è£…ä¸€ä¸ªåŒ…ï¼šnpm install -g express-generator
+	åŽŸå› ï¼šexpress3+å·²ç»æŠŠåˆ›å»ºä¸€ä¸ªappåŠŸèƒ½åˆ†ç¦»å‡ºæ¥ä¸ºexpress-generatorï¼Œæ²¡ä»–å°±åˆ›å»ºä¸äº†åº”ç”¨ç¨‹åº
+3.tasks:æž„å»ºæ•´ä¸ªå‰ç«¯ä»£ç çš„ç¼–è¯‘ä¸ŽæœåŠ¡å™¨åˆ·æ–°ç­‰åŠŸèƒ½
+     ï¼ˆ1ï¼‰util:æ”¾ç½®å¸¸è§çš„è„šæœ¬
+         ï¼ˆ1ï¼‰args.jsï¼šå¼•å…¥ä¸€ä¸ªåŒ…ï¼Œç”¨æ¥å¤„ç†å‘½ä»¤è¡Œå‚æ•°çš„
+		option('')ï¼šæå–å‚æ•°çš„,å¦‚ gulp -production ,optionæå–çš„å°±æ˜¯-production
+		 productioné»˜è®¤æ˜¯falseï¼Œå¦‚æžœå‘½ä»¤è¡Œä¸­æ²¡æœ‰è¿™ä¸ªå‚æ•°ï¼Œé»˜è®¤falseå°±æ˜¯å¼€å‘çŽ¯å¢ƒ
+     ï¼ˆ2ï¼‰scripts.js:åˆ›å»ºä¸€ä¸ªæž„å»ºè„šæœ¬ï¼Œæ˜¯ä»¥jsè¿›è¡Œå¤„ç†çš„
+		å¾€æ–‡ä»¶ä¸­æ·»åŠ å„ç§åŒ…
+     ï¼ˆ3ï¼‰pages.js:å¤„ç†æ¨¡æ¿çš„æž„å»ºè„šæœ¬
+     ï¼ˆ4ï¼‰css.js:å¤„ç†cssçš„ï¼Œå› ä¸ºcssä¸éœ€è¦ç¼–è¯‘ç­‰ï¼Œæ‰€ä»¥ä¸ç”¨ç›‘å¬ï¼ˆå¯æœ‰å¯æ— ï¼‰
+     ï¼ˆ5ï¼‰server.js:å¤„ç†æœåŠ¡å™¨çš„è„šæœ¬
+     ï¼ˆ6ï¼‰å°†ä¸Šé¢å»ºç«‹çš„è„šæœ¬ä¸­æ‰€æœ‰çš„ä»»åŠ¡è‡ªåŠ¨çš„åŽ»å®Œæˆï¼Œå½“æºæ–‡ä»¶å‘ç”Ÿæ”¹å˜æ—¶è‡ªåŠ¨ç¼–è¯‘åˆ°å¤‡ä»½åˆ°å…¶ä»–çš„æ–‡ä»¶ï¼Œåˆ™æ–°å»ºæ–‡ä»¶ï¼š
+          browser.js: æµè§ˆå™¨ç›‘å¬ç›¸å…³çš„æ–‡ä»¶
+     ï¼ˆ7ï¼‰ä¿®æ”¹å®Œéœ€è¦è¦†ç›–åŽŸæ–‡ä»¶ï¼Œè¿™æ—¶å€™æˆ‘ä»¬è¦å°†åŽŸç›®å½•ä¸­çš„æ–‡ä»¶æ¸…ç©ºæŽ‰
+	  clean.js:æ¸…ç©ºåŽŸç›®å½•ä¸­çš„æ–‡ä»¶
+     ï¼ˆ8ï¼‰build.js:å°†æ‰€æœ‰ä»»åŠ¡éƒ½ä¸²èµ·æ¥
+     ï¼ˆ9ï¼‰default.js:å½“åœ¨å‘½ä»¤è¡Œä¸­åªè¾“å…¥gulpæ—¶ï¼Œå°±éœ€è¦æ‰¾åˆ°è¿™ä¸ªé»˜è®¤çš„æ–‡ä»¶ï¼Œ
+4.npm ä¾èµ–åŒ…ï¼šå¯è‡ªåŠ¨åˆ›å»ºä¹Ÿå¯ä»¥npm initåˆ›å»ºï¼ˆæœ¬é¡¹ç›®ç”¨npm initåˆ›å»ºï¼‰
+5.babelrcï¼šè®¾ç½®bebelç¼–è¯‘çš„æ–‡ä»¶
+	é—®é¢˜ï¼šåœ¨windowä¸­åˆ›å»ºä»¥.å¼€å¤´çš„æ–‡ä»¶ä¼šå‡ºçŽ°é”™è¯¯
+	è§£å†³æ–¹æ³•ï¼šè¾“å…¥".babelrc.",åœ¨åŽé¢å†åŠ ä¸€ä¸ª.
 6.gulpfile.babel.js
 
 
-ÓÃgulp --watchÆô¶¯
+ç”¨gulp --watchå¯åŠ¨
 
-³öÏÖÎÊÌâ£º
+å‡ºçŽ°é—®é¢˜ï¼š
 1.using gulpfile ~/es6Item/gulpfile.babel.js
-	ËµÃ÷£ºÒÑ¾­´´½¨ÁË¸ÃÎÄ¼þ£¬µ«¸ÃÎÄ¼þÎª¿Õ
-	½â¾ö£º½«ËùÓÐÎÄ¼þ¼ÓÔØ½ø¸ÃÎÄ¼þ 
+	è¯´æ˜Žï¼šå·²ç»åˆ›å»ºäº†è¯¥æ–‡ä»¶ï¼Œä½†è¯¥æ–‡ä»¶ä¸ºç©º
+	è§£å†³ï¼šå°†æ‰€æœ‰æ–‡ä»¶åŠ è½½è¿›è¯¥æ–‡ä»¶ 
 2.task 'defalut' is not in your gulpfile
-	ËµÃ÷£ºÕÒ²»µ½defalut,ÒòÎªgulp¿ªÆôÊ±£¬µÚÒ»²½ÕÒµÄÊÇgulpfile.babel.jsÕâ¸öÎÄ¼þ
-3.¡¾You need to specify 'babel-loader' instead of 'babel'.¡¿¡£
-	½â¾ö·½°¸£ºwebpackÖÐµÄloader:"babel-loader"£¬²»Òª¼òÐ´Îª£ºloader:"babel"
+	è¯´æ˜Žï¼šæ‰¾ä¸åˆ°defalut,å› ä¸ºgulpå¼€å¯æ—¶ï¼Œç¬¬ä¸€æ­¥æ‰¾çš„æ˜¯gulpfile.babel.jsè¿™ä¸ªæ–‡ä»¶
+3.ã€You need to specify 'babel-loader' instead of 'babel'.ã€‘ã€‚
+	è§£å†³æ–¹æ¡ˆï¼šwebpackä¸­çš„loader:"babel-loader"ï¼Œä¸è¦ç®€å†™ä¸ºï¼šloader:"babel"
 4.Failed to load external module @babel/register
-	# Ä¿Ç°°æ±¾3.9.1 »á±¨Õâ¸ö´íÎó£¬É¾³ýÐÂµÄ°æ±¾£¬°²×°¾É°æ±¾¾Í¿ÉÒÔÁË
+	# ç›®å‰ç‰ˆæœ¬3.9.1 ä¼šæŠ¥è¿™ä¸ªé”™è¯¯ï¼Œåˆ é™¤æ–°çš„ç‰ˆæœ¬ï¼Œå®‰è£…æ—§ç‰ˆæœ¬å°±å¯ä»¥äº†
 	sudo rm -rf /usr/local/lib/node_modules/gulp   
 	sudo cnpm i -g gulp@3.9.0
+
+
+4.1 éœ€æ±‚åˆ†è§£å’Œç›®å½•åˆ›å»º
+	åŠŸèƒ½æ¨¡å—ï¼š
+	å€’è®¡æ—¶ï¼ŒçŽ©æ³•åˆ‡æ¢ï¼Œè®¡ç®—é‡‘é¢ï¼Œæ·»åŠ å·ç ï¼ŒæŠ•æ³¨æ”¯ä»˜ï¼Œ
+	éšæœºå·ç ï¼Œå¥–é‡‘é¢„æµ‹ï¼ŒçŠ¶æ€æ›´æ–°ï¼ŒåŠ¨æ€é—æ¼
+
+	æ¨¡å—åŒ–ï¼š
+	1. å®šæ—¶å™¨ï¼šå€’è®¡æ—¶
+	2. è®¡ç®—
+	3. æœåŠ¡ç«¯æŽ¥å£
+	4. åŸºæœ¬çš„
